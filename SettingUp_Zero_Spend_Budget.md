@@ -2,4 +2,4 @@
 
 ## Step 1: Login to AWS Management Console and search for Billing and Cost Management.
 
-<img width="452" alt="Image" src="https://github.com/user-attachments/assets/fa3c6b69-b17a-42ec-95be-a91430852e84" />
+![Billing_Login](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/Zero_Spend_Budget%201.png?raw=true)

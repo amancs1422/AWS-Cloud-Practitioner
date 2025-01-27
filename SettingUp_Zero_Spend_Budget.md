@@ -1,5 +1,7 @@
 # Setting up a Zero Spend Budget
-![Static Badge](https://img.shields.io/badge/Author%20-%20Aman%20Kumar-blue)
+![Static Badge](https://img.shields.io/badge/Author%20-%20Aman%20Kumar-blue) ![Static Badge](https://img.shields.io/badge/Tags%20-%20AWS%20Budgets-yellow)
+![Static Badge](https://img.shields.io/badge/AWS%20Billing%20and%20Cost%20Management-orange)
+
 ### Step 1: Login to AWS Management Console and search for Billing and Cost Management.
 
 ![Billing_Login](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/Zero_Spend_Budget%201.png?raw=true)

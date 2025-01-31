@@ -1,6 +1,10 @@
-##Login to AWS Management Console and search for S3 service. 
-##Click on “create bucket” button.
- 
-##Provide a name for your S3 bucket. 
-##Uncheck the “Block all public access flag” and check on the public access acknowledgment. 
-##Then click on “create bucket” again and you will see your new S3 bucket created. 
+### Step 1: Login to AWS Management Console and search for S3 service. 
+![Console_Login](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/S3_Static%201.png?raw=true)
+### Step 2: Click on “Create bucket” button.
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/S3_Static%202.png?raw=true)
+### Step 3: Provide a name for your S3 bucket. 
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/S3_Static%203.png?raw=true)
+### Step 4: Uncheck the “Block all public access” and check on the public access acknowledgment.
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/S3_Static%204.png?raw=true)
+### Step 5: Then click on “Create bucket” button again and you will see your new S3 bucket created.
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/S3_Static%205.png?raw=true)

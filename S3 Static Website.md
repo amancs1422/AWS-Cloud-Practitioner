@@ -7,6 +7,7 @@ Built to retrieve any amount of data from anywhere. Amazon Simple Storage Servic
   <li>Archive data at the lowest cost.</li>
   <li>Put your data to work.</li>
 </ol>
+
 ### Step 1: Login to AWS Management Console and search for S3 service. 
 ![Console_Login](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/S3_Static%201.png?raw=true)
 ### Step 2: Click on “Create bucket” button.

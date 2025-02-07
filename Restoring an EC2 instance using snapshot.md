@@ -5,6 +5,6 @@
   <li>Create a new AMI from the snapshot and launch a new instance.</li>
   <li>Replace the root volume of an existing EC2 instance with a new volume created from the snapshot.</li>
   <li>Copy snapshot to another region and restore an EC2 instance/</li>
-  <li></li>
-  <li></li>
+  <li>Create a new EBS volume from the snapshot and attach to an existing instance.</li>
+  <li>Automate EC2 recovery using AWS Backup.</li>
 </ol>

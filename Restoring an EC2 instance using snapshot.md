@@ -1,6 +1,6 @@
 # Restoring an EC2 instance using snapshot
 
-## What is a Snapshot?
+### :milky_way: What is a Snapshot?
 
 ### Following are the ways to Restore an EC2 instance using snapshot:
 <ol>

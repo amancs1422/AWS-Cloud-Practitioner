@@ -1,5 +1,7 @@
 # Restoring an EC2 instance using snapshot
 
+## What is a Snapshot?
+
 ### Following are the ways to Restore an EC2 instance using snapshot:
 <ol>
   <li>Create a new EBS volume from the snapshot and attach to an existing instance.</li>

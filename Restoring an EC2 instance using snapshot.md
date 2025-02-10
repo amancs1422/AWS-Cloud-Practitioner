@@ -1,6 +1,6 @@
-# Restoring an EC2 instance using snapshot
+# :signal_strength:Restoring an EC2 instance using snapshot
 
-### :milky_way: What is a Snapshot?
+### :floppy_disk: What is a Snapshot?
 
 ### Following are the ways to Restore an EC2 instance using snapshot:
 <ol>

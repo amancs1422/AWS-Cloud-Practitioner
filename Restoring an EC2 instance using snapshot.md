@@ -5,7 +5,7 @@
 ### Following are the ways to Restore an EC2 instance using snapshot:
 <ol>
   <li>Create a new EBS volume from the snapshot and attach to an existing instance.</li>
-  :link: https://www.youtube.com/watch?v=85djWS1rDyE -> fix for mounting issue in the above step.
+  :link: https://www.youtube.com/watch?v=85djWS1rDyE -> fix for mounting issue in the above step.<br>
   :link: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-snapshots.html -> AWS documentation on snapshots.
   <li>Replace the root volume of an existing EC2 instance with a new volume created from the snapshot.</li>
   <li>Copy snapshot to another region and restore an EC2 instance.</li>

@@ -37,23 +37,41 @@ Step 5: Now let’s create some files to be stored in our EC2 instance.<br>
 Step 6: Navigate to the Volumes section in EC2 dashboard and select the volume attached to your EC2 instance.<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%208.png)<br>
 Step 7: Dropdown the actions section and click on Create snapshot.<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%209.png)<br>
 Step 8: Provide a description for the snapshot and click on Create Snapshot button. <br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2010.png)<br>
 Step 9: Navigate to the Snapshots section in the EC2 dashboard and you will find the snapshot you have just created. <br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2011.png)<br>
 Step 10: Select the snapshot and dropdown on Actions section and select Create volume from snapshot. <br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2012.png)<br>
 Note: Make sure to check that the Availability Zone of the volume created is same as the EC2 instance you want to restore.<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2013.png)<br>
 Our backup has been complete since we have created files in our EC2 instance and we have taken a point-in-time copy of the EC2 instance, let’s go ahead and delete the files so we can restore them back using volume created from snapshot above.<br>
+<br>
 Step 12: Use the below command to delete the files in your EC2 instance.<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2014.png)<br>
 Step 13: Select the newly created volume (I have named it as Restore_volume) and dropdown on the Actions button and select Attach volume.<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2015.png)<br>
 Step 14: Select the instance you want to restore and choose the device name (I have chosen /dev/sdf here) and click on Attach volume button.<br>
+![]()<br>
 Step 15: To make sure that the restore volume is attached to your EC2 instance select your EC2 instance in Instances section of EC2 dashboard and navigate to storage section, you will see the volume attached there.<br>
+![]()<br>
 Step 16: Execute the below command to check and make sure that your volume is attached to your EC2 instance.<br>
+![]()<br>
 Step 17: Even though the volume is attached to your EC2 instance, we still need to mount it for the files to be restored.<br>
+![]()<br>
+Step 18: Use the command mount /dev/xvdf1 /root/newvolume to mount the volume to your EC2 instance.
 You will see a very common error you might face.<br>
+![]()<br>
 Take below steps to resolve the error.<br>
-Step 19: Execute the command sudo lsblk –output NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,LABEL. You will see the exact filesystem of the restore volume.  <br>
+Step 19: Execute the command sudo lsblk –output NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,LABEL. You will see the exact filesystem of the restore volume.<br>
+![]()<br>
 Step 20: Execute the command mount /dev/xvdf1 /root/newvolume -t xfs to specify the filesystem of your restore volume while mounting.<br>
+![]()<br>
 We still get the wrong fs type error. To resolve do the following:<br>
 Step 21: Execute the command dmesg | tail to see the latest error logs. You will see the below Filesystem has duplicate UUID error.<br>
+![]()<br>
 Step 22: To bypass the above error, execute the command sudo mount -o nouuid /dev/xvdf1 /mnt/.<br>
 Navigate to your mount location using command cd /mnt/home/ec2-user/.<br>
 Then execute ls command to see all the files restored back to your EC2 instance. <br>
+![]()<br>

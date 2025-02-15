@@ -21,6 +21,7 @@ Step 1: Login to ${\color{red}AWS \space Management \space Console}$ and navigat
 Step 2: Fill in the EC2 instance name and leave the rest of the details as it is and click on ${\color{red} Launch \space Instances}$ button. <br>
 ![Fill_details_Launch_Instance](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%202.png)<br>
 Step 3: Select your instance and click on Connect button.<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%203.png)<br>
 Step 4: You can execute the below commands to capture the EC2 details pre-restore.<br>
 ```
  lsblk
@@ -28,7 +29,9 @@ Step 4: You can execute the below commands to capture the EC2 details pre-restor
 ```
  df -h
 ```
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%204.png)<br>
 Step 5: Now let’s create some files to be stored in our EC2 instance.<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%205.png)<br>
 Step 6: Navigate to the Volumes section in EC2 dashboard and select the volume attached to your EC2 instance.<br>
 Step 7: Dropdown the actions section and click on Create snapshot.<br>
 Step 8: Provide a description for the snapshot and click on Create Snapshot button. <br>

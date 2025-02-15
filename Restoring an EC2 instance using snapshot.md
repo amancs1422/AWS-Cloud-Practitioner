@@ -15,3 +15,8 @@
 </ol>
 
 ### Method 1: Create a new EBS volume from the snapshot and attach to an existing instance.
+
+Step 1: Login to ${\color{red}AWS \space Management \space Console}$ and navigate to EC2 dashboard. Then click on ${\color{red} Launch \space Instances}$ button. <br>
+![EC2 dashboard](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%201.png)<br>
+Step 2: Fill in the EC2 instance name and leave the rest of the details as it is and click on ${\color{red} Launch \space Instances}$ button. <br>
+![Fill_details_Launch_Instance](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%202.png)

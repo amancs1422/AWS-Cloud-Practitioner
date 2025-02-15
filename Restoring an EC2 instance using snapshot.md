@@ -53,25 +53,25 @@ Step 12: Use the below command to delete the files in your EC2 instance.<br>
 Step 13: Select the newly created volume (I have named it as Restore_volume) and dropdown on the Actions button and select Attach volume.<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2015.png)<br>
 Step 14: Select the instance you want to restore and choose the device name (I have chosen /dev/sdf here) and click on Attach volume button.<br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2016.png)<br>
 Step 15: To make sure that the restore volume is attached to your EC2 instance select your EC2 instance in Instances section of EC2 dashboard and navigate to storage section, you will see the volume attached there.<br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2017.png)<br>
 Step 16: Execute the below command to check and make sure that your volume is attached to your EC2 instance.<br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2018.png)<br>
 Step 17: Even though the volume is attached to your EC2 instance, we still need to mount it for the files to be restored.<br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2019.png)<br>
 Step 18: Use the command mount /dev/xvdf1 /root/newvolume to mount the volume to your EC2 instance.
 You will see a very common error you might face.<br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2020.png)<br>
 Take below steps to resolve the error.<br>
 Step 19: Execute the command sudo lsblk –output NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,LABEL. You will see the exact filesystem of the restore volume.<br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2021.png)<br>
 Step 20: Execute the command mount /dev/xvdf1 /root/newvolume -t xfs to specify the filesystem of your restore volume while mounting.<br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2022.png)<br>
 We still get the wrong fs type error. To resolve do the following:<br>
 Step 21: Execute the command dmesg | tail to see the latest error logs. You will see the below Filesystem has duplicate UUID error.<br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2023.png)<br>
 Step 22: To bypass the above error, execute the command sudo mount -o nouuid /dev/xvdf1 /mnt/.<br>
 Navigate to your mount location using command cd /mnt/home/ec2-user/.<br>
 Then execute ls command to see all the files restored back to your EC2 instance. <br>
-![]()<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2024.png)<br>

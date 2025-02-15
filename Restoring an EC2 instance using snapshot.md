@@ -35,6 +35,7 @@ Step 5: Now let’s create some files to be stored in our EC2 instance.<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%206.png)<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%207.png)<br>
 Step 6: Navigate to the Volumes section in EC2 dashboard and select the volume attached to your EC2 instance.<br>
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%208.png)<br>
 Step 7: Dropdown the actions section and click on Create snapshot.<br>
 Step 8: Provide a description for the snapshot and click on Create Snapshot button. <br>
 Step 9: Navigate to the Snapshots section in the EC2 dashboard and you will find the snapshot you have just created. <br>

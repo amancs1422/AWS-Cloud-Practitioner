@@ -2,7 +2,7 @@
 
 ### :floppy_disk: What is a Snapshot?
 
-### Following are the ways to Restore an EC2 instance using snapshot:
+### :page_with_curl: Following are the ways to Restore an EC2 instance using snapshot:
 
  :one:Create a new EBS volume from the snapshot and attach to an existing instance.<br>
   :two:Replace the root volume of an existing EC2 instance with a new volume created from the snapshot.<br>

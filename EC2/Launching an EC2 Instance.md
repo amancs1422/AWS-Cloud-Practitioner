@@ -1,4 +1,4 @@
-## Launching an EC2 Instance
+## :rocket::rocket:Launching an EC2 Instance
 
 ### Step 1: Log into your AWS management console, search for EC2 and click on it.
 ![Search_EC2](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/Launch_EC2_Instance%201.png?raw=true) 
@@ -14,5 +14,3 @@
 
 ### Step 4: Go back to instances section and you should see your newly launched instance present there.
 ![Instance_List](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/Launch_EC2_Instance%205.png?raw=true)
-
-![Congratulations_Banner](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/EC2_Banner.png?raw=true)

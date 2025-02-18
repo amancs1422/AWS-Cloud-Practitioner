@@ -61,11 +61,17 @@ lsblk
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2018.png)<br>
 Step 17: Even though the volume is attached to your EC2 instance, we still need to mount it for the files to be restored.<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2019.png)<br>
-Step 18: Use the command mount /dev/xvdf1 /root/newvolume to mount the volume to your EC2 instance.
-You will see a very common error you might face.<br>
+Step 18: Use the following mount command to mount the volume to your EC2 instance.
+```
+mount /dev/xvdf1 /root/newvolume 
+```
+You will see a very common error you might face while mounting the new volume to your existing instance.<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2020.png)<br>
 Take below steps to resolve the error.<br>
-Step 19: Execute the command sudo lsblk –output NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,LABEL. You will see the exact filesystem of the restore volume.<br>
+Step 19: Execute the below command to see the exact filesystem of the restore volume.<br>
+```
+sudo lsblk –output NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,LABEL
+```
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2021.png)<br>
 Step 20: Execute the command mount /dev/xvdf1 /root/newvolume -t xfs to specify the filesystem of your restore volume while mounting.<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2022.png)<br>

@@ -14,7 +14,10 @@ Step 4: You can execute the below commands to capture the EC2 details pre-restor
  df -h
 ```
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%204.png)<br>
-Step 5: Now let’s create some files to be stored in our EC2 instance.<br>
+Step 5: Now let’s create some files to be stored in our EC2 instance using below command.<br>
+```
+vi test.txt
+```
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%205.png)<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%206.png)<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%207.png)<br>

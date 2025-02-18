@@ -80,9 +80,21 @@ mount /dev/xvdf1 /root/newvolume -t xfs
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2022.png)<br>
 We still get the wrong fs type error. To resolve do the following:<br>
 <br>
-Step 21: Execute the command dmesg | tail to see the latest error logs. You will see the below Filesystem has duplicate UUID error.<br>
+Step 21: Execute the command below to see the latest error logs. You will see the "Filesystem has duplicate UUID error".<br>
+```
+dmesg | tail 
+```
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2023.png)<br>
-Step 22: To bypass the above error, execute the command sudo mount -o nouuid /dev/xvdf1 /mnt/.<br>
-Navigate to your mount location using command cd /mnt/home/ec2-user/.<br>
+Step 22: To bypass the above error, execute the command:<br>
+```
+sudo mount -o nouuid /dev/xvdf1 /mnt/
+```
+Navigate to your mount location using below command.<br>
+```
+cd /mnt/home/ec2-user/.
+```
 Then execute ls command to see all the files restored back to your EC2 instance. <br>
+```
+ls 
+```
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2024.png)<br>

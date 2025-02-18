@@ -73,9 +73,13 @@ Step 19: Execute the below command to see the exact filesystem of the restore vo
 sudo lsblk –output NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,LABEL
 ```
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2021.png)<br>
-Step 20: Execute the command mount /dev/xvdf1 /root/newvolume -t xfs to specify the filesystem of your restore volume while mounting.<br>
+Step 20: Execute the command below to specify the filesystem of your restore volume while mounting.<br>
+```
+mount /dev/xvdf1 /root/newvolume -t xfs 
+```
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2022.png)<br>
 We still get the wrong fs type error. To resolve do the following:<br>
+<br>
 Step 21: Execute the command dmesg | tail to see the latest error logs. You will see the below Filesystem has duplicate UUID error.<br>
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/BKP_Restore%2023.png)<br>
 Step 22: To bypass the above error, execute the command sudo mount -o nouuid /dev/xvdf1 /mnt/.<br>

@@ -1,3 +1,4 @@
+# TASK : Create and restore an EC2 instance using EBS snapshots only (no AMI).
 ## Step 1 : 
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/dd23fcf82591e26071dfd63039fe73a02b66f310/EC2/Backup%20&%20Restore/Images/Task%201_1.jpg)
 ## Step 2 : 
@@ -28,3 +29,5 @@
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/dd23fcf82591e26071dfd63039fe73a02b66f310/EC2/Backup%20&%20Restore/Images/Task%201_14.jpg)
 ## Step 15 : 
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/dd23fcf82591e26071dfd63039fe73a02b66f310/EC2/Backup%20&%20Restore/Images/Task%201_15.jpg)
+
+-AK

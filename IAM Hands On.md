@@ -1,5 +1,5 @@
-# Identity and access management(IAM) 
-## Creating a user in IAM:
+# Identity and access management(IAM)
+## Creating a user in Identity and Access Management:
 Step 1: Access your AWS management console and search for IAM.
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/Images/IAM%201.png)<br>
 Step 2: On the next screen, click on Users section. <br>

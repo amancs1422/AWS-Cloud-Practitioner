@@ -11,3 +11,9 @@
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/S3_Images/Serverless_5.jpg)
 ### Step 6 : 
 ![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/S3_Images/Serverless_6.jpg)
+### Step 7 : 
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/S3_Images/Serverless_7.jpg)
+### Step 8 : 
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/S3_Images/Serverless_8.jpg)
+### Step 9 : 
+![](https://github.com/amancs1422/AWS-Cloud-Practitioner/blob/main/S3_Images/Serverless_9.jpg)
